@@ -1,0 +1,21 @@
+ {:source-paths ["src"]
+ :dependencies [[cider/cider-nrepl "0.22.2"]
+                [reagent "1.0.0-alpha2"]]
+ :nrepl        {:port 3333}
+ :builds {:app {:target :browser
+                :output-dir "public/js"
+                :modules {:main {:init-fn app.core/init}}
+                :compiler-options {:closure-defines {}
+
+                :devtools {:http-root   "public"
+                           :http-port   3000
+                           :repl-pprint true
+                           :preloads    []}}}
+          :app-mobile {:target :react-native
+                :output-dir "app"
+                :asset-path "/js"
+                :init-fn app.app/init
+          :devtools {:autoload true
+                :preloads [shadow.expo.keep-awake]}}}
+
+          :tests {:target :karma}}
