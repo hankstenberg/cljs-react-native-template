@@ -3,8 +3,8 @@ Empty template to get going with a React Native app using CLJS, shadow-cljs and 
 
 ## Installation
 ### Download packages:
-- yarn
+`yarn`
 ### Start REPL
-Either use CIDER or "shadow-cljs watch :app-mobile" from the command line
+Either use CIDER or `shadow-cljs watch :app-mobile` from the shell
 ### Run expo
-expo start --web
+`expo start --web`
