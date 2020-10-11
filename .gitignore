@@ -1,4 +1,5 @@
 /node_modules
+/app
 /.expo
 /.shadow-cljs
 yarn.lock
